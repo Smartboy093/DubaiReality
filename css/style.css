@@ -1,0 +1,799 @@
+/* fonts */
+/* Work Sans */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Space Grotesk */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+html {
+   box-sizing: border-box;
+   line-height: inherit;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   color: inherit;
+}
+
+a {
+   cursor: pointer;
+}
+
+/* body */
+
+body {
+   min-width: 320px;
+   font-family: "Gilroy", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   color: #fff;
+   background-color: #272727;
+}
+
+/* reset-syntaxis */
+
+.btn-reset {
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.list-reset {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.section-title {
+   margin: 0;
+   width: 100%;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 59px;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1800px;
+}
+
+.section-offset {
+   margin-bottom: 100px;
+}
+
+/* header */
+.header__wrapper {
+   margin: 26px 0px 20px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__navigation {
+   display: flex;
+   align-items: center;
+}
+
+.header__nav {
+   padding-left: 150px;
+   display: flex;
+}
+
+.nav__list {
+   display: flex;
+}
+
+.nav__link {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.nav__link:hover {
+   text-decoration: underline;
+   color: #fcd54c;
+}
+
+.nav__item:not(:last-child) {
+   margin-right: 40px;
+}
+
+.header__menu {
+   display: flex;
+   align-items: center;
+}
+
+.header__menu-link {
+   margin-right: 119px;
+
+   padding: 12px 14px;
+   background-color: #fcd54c;
+
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: #000000;
+}
+
+.header__menu-language-en {
+   margin-right: 8px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: uppercase;
+   color: #fcd54c;
+}
+
+.header__menu-language-ru {
+   margin-right: 53px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: uppercase;
+   color: #929292;
+}
+
+.header__menu-phone {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   color: #ffffff;
+}
+
+/* main - welcome */
+.welcome__wrapper {
+   position: relative;
+   width: 100%;
+   height: 971px;
+   background: linear-gradient(
+         270deg,
+         rgba(0, 0, 0, 0.4) 10.1%,
+         rgba(0, 0, 0, 0) 76.11%
+      ),
+      url(../img/bg_luxury.jpg);
+   /* display: flex;
+	flex-direction: column;
+	align-items: center; */
+}
+
+.welcome__wrapper-links {
+   padding: 40px 20px 0px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.welcome__wrapper-link {
+   padding-top: 20px;
+}
+
+.welcome__wrapper-link-facebook {
+   padding-right: 5px;
+}
+
+.welcome__wrapper-link-twitter {
+   padding-right: 2px;
+}
+
+.welcome__wrapper-link-instagram {
+   padding-right: 2px;
+}
+
+.welcome__wrapper-info {
+   position: absolute;
+   top: 357px;
+   left: 356px;
+}
+
+.welcome__wrapper-info-span {
+   position: absolute;
+   left: 0px;
+   top: -20px;
+
+   width: 124px;
+   height: 383px;
+   border: 4px solid #fcd54c;
+   border-right: 0px;
+}
+
+.welcome__wrapper-info-poz {
+   margin: 34px 0 0 22px;
+}
+
+.welcome__wrapper-info-desc {
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.welcome__wrapper-info-title {
+   padding-top: 22px;
+   width: 714px;
+   font-family: "Space Grotesk";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 96px;
+   line-height: 100px;
+   text-transform: capitalize;
+   color: #ffffff;
+}
+
+.welcome__wrapper-info-highlight {
+   color: #fcd54c;
+}
+
+.welcome__wrapper-info-link {
+   padding-top: 12px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   color: #ffffff;
+}
+
+.welcome__wrapper-info-img {
+   padding-left: 10px;
+}
+
+.welcome__wrapper-jsproperty {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+}
+
+.welcome__wrapper-form {
+   margin-right: 90px;
+}
+
+.welcome__wrapper-btn {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.welcome__wrapper-form-span {
+   margin-right: 5px;
+   width: 20px;
+   height: 0px;
+   border: 1px solid #929292;
+   transform: rotate(90deg);
+}
+
+.welcome__wrapper-jsmenu {
+   width: 1080px;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   background: #272727;
+}
+
+.welcome__wrapper-jsmenu-number {
+   padding-right: 37px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 24px;
+   color: #ffffff;
+}
+
+.welcome__wrapper-jsmenu-number:first-child {
+   padding-left: 60px;
+   color: #fcd54c;
+}
+
+.welcome__wrapper-jsmenu-text {
+   width: 170px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 26px;
+   color: #ffffff;
+}
+
+.welcome__wrapper-jsmenu-text:not(:last-child) {
+   margin-right: 171px;
+}
+
+/* main - projects */
+
+.project__info {
+   margin-top: 124px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.project__info-title {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 69px;
+   color: #ffffff;
+}
+
+.project__info-buttons {
+   display: flex;
+   align-items: center;
+}
+
+.project__info-button {
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 21px;
+   color: #ffffff;
+}
+
+.project__info-button:not(:last-child) {
+   margin-right: 34px;
+}
+
+.project__info-button:first-child {
+   color: #fcd54c;
+}
+
+.project__info-button:last-child {
+   font-style: italic;
+   color: #929292;
+}
+
+.project__applications {
+   margin-top: 78px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.project__application {
+   position: relative;
+   width: 430px;
+   height: 572px;
+}
+
+.project__applications:hover .project__application {
+   background-color: #272727;
+}
+
+.project__application-image {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.project__application-desc {
+   position: absolute;
+   top: 450px;
+   left: 40px;
+
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 45px;
+   color: #ffffff;
+}
+
+.project__application-appear {
+   padding: 40px 0px 0px 30px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: 0.5s ease;
+   background-color: #fcd54c;
+}
+
+.project__application-appear-title {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 45px;
+   color: #272727;
+}
+
+.project__application-appear-desc {
+   padding-top: 143px;
+   width: 339px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 26px;
+   color: #272727;
+}
+
+.project__application-appear-link {
+   padding-top: 114px;
+   display: flex;
+   align-items: center;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   color: #272727;
+}
+
+.project__application-appear-link-img {
+   width: 11px;
+   height: 20px;
+   margin-left: 10px;
+}
+
+.project__application:hover .project__application-appear {
+   opacity: 1;
+}
+
+.js__property {
+   margin-top: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.circle {
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+}
+
+.circle:not(:last-child) {
+   margin-right: 17px;
+}
+
+.js__property-highlight {
+   background: #fcd54c;
+}
+
+.js__property-normal {
+   background: #929292;
+}
+
+/* main - expertise*/
+.expertise-position {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.expertise__info {
+   margin-top: 70px;
+   width: 729px;
+   display: flex;
+   flex-direction: column;
+}
+
+.expertise__info-desc {
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 160%;
+   color: #fcd54c;
+}
+
+.expertise__info-title {
+   margin-top: 40px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 70px;
+   line-height: 69px;
+   color: #e8e8e8;
+}
+
+.expertise__info-text {
+   margin-top: 33px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 160%;
+   color: #e8e8e8;
+}
+
+.expertise__iframe {
+   margin-top: 89px;
+   width: 1800px;
+   height: 921px;
+}
+
+.limit__wrapper {
+   margin-top: 120px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.limit__info {
+   padding: 70px 95px;
+   width: 1110px;
+   height: 313px;
+   border: 1px solid #fcd54c;
+}
+
+.limit__info-text {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 160%;
+   color: #ffffff;
+}
+
+.limit__info-span {
+   color: #fcd54c;
+}
+
+.limit__columns {
+   margin-top: 64px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.limit__column:first-child {
+   margin-right: 24px;
+}
+
+.limit__column-img {
+   width: 543px;
+   height: 312px;
+}
+
+.limit__column-text {
+   margin-top: 70px;
+   width: 543px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 160%;
+   color: #e8e8e8;
+}
+
+.support__wrapper {
+   margin-top: 115px;
+   width: 100%;
+   height: 400px;
+   background-image: url(../img/img_contact-us.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.support__wrapper-desc {
+   margin-top: 87px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 160%;
+   color: #272727;
+}
+
+.support__wrapper-title {
+   margin-top: 15px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 120px;
+   line-height: 69px;
+   color: #272727;
+}
+
+.support__wrapper-form {
+   margin-top: 54px;
+   position: relative;
+}
+
+.support__wrapper-input {
+   padding-left: 42px;
+   width: 472px;
+   height: 61px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   color: #272727;
+   opacity: 0.5;
+}
+
+.support__wrapper-btn {
+   position: absolute;
+   right: 0px;
+   width: 165px;
+   height: 61px;
+   position: absolute;
+   background: #272727;
+
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: #ffffff;
+}
+
+/* main - articles */
+.articles__info {
+   margin-top: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.articles__info-title {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 70px;
+   line-height: 85px;
+   color: #ffffff;
+}
+
+.articles__info-link {
+   display: flex;
+   align-items: center;
+
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 21px;
+   color: #929292;
+}
+
+.articles__info-img {
+   margin-left: 21px;
+}
+
+.articles__architectures {
+   margin-top: 90px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.articles__architecture {
+   position: relative;
+   width: 350px;
+   height: 352px;
+}
+
+.articles__architecture:not(:last-child) {
+   margin-right: 31px;
+}
+
+.articles__architecture-image {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.articles__architecture-desc {
+   position: absolute;
+   top: 264px;
+   left: 38px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 35px;
+   color: #ffffff;
+}
+
+.articles__architecture-appear {
+   padding: 40px 0px 0px 30px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   border: 1px solid #fcd54c;
+   opacity: 0;
+   transition: 0.5s ease;
+   background-color: #272727;
+}
+
+.articles__architecture:hover .articles__architecture-appear {
+   opacity: 1;
+}
+
+.articles__architecture-appear-calendar {
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: #ffffff;
+}
+
+.articles__architecture-appear-title {
+   margin-top: 15px;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 35px;
+   color: #ffffff;
+}
+
+.articles__architecture-appear-desc {
+   margin-top: 28px;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: #929292;
+}
+
+.articles__architecture-appear-link {
+   display: flex;
+   font-family: "Work Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: #fcd54c;
+}
+
+/* .articles__architecture-appear-link-img {} */
